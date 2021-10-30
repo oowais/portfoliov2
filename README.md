@@ -1,4 +1,4 @@
-### Hey there, I'm Owais, you can check out my portfolio [here][portfolio] 👋
+### Hey there, I'm Owais, you can check out the demo [here][portfolio] 👋
 
 
 

@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  font-size: 62.5%;
+}
+
+body {
+  background: #1d1f20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 1.4rem 3rem;
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  margin: 20px 30px;
+  font-family: 'Roboto', sans-serif;
+  background: #1d1f20;
+}
+
+button {
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    background: yellowgreen;
+    z-index: -1;
+  }
+}
+
+.button {
+  &:before {
+    top: -0.1rem;
+    bottom: 100%;
+    left: -0.1rem;
+    right: calc(100% + 0.1rem);
+    transition: left .5s, right .5s, bottom .5s;
+
+  }
+
+  &:after {
+    top: 100%;
+    bottom: -0.1rem;
+    left: calc(100% + 0.1rem);
+    right: -0.1rem;
+    transition: left .5s, right .5s, top .5s;
+  }
+
+  &:hover {
+    &:before {
+      top: -0.1rem;
+      bottom: 0;
+      left: -0.1rem;
+      right: 0;
+    }
+
+    &:after {
+      top: 0;
+      bottom: -0.1rem;
+      left: 0;
+      right: -0.1rem;
+    }
+  }
+}
