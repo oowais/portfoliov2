@@ -1,0 +1,11 @@
+
+.img {
+  width: 290px;
+  height: 290px;
+  clip-path: circle();
+  transition: transform 400ms ease-in;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}

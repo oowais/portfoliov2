@@ -7,13 +7,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { StairsLoaderComponent } from './stairs-loader/stairs-loader.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ButtonComponent } from './button/button.component';
+import { FullPageNavComponent } from './full-page-nav/full-page-nav.component';
+import { AboutmeCardComponent } from './aboutme-card/aboutme-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StairsLoaderComponent,
     TimelineComponent,
-    ButtonComponent
+    ButtonComponent,
+    FullPageNavComponent,
+    AboutmeCardComponent
   ],
   imports: [
     BrowserModule,
