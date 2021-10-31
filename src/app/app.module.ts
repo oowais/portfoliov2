@@ -13,6 +13,8 @@ import { NeonButtonComponent } from './neon-button/neon-button.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FloatingHomeComponent } from './floating-home/floating-home.component';
 import { EmailMeComponent } from './email-me/email-me.component';
+import { AnimatedModalComponent } from './animated-modal/animated-modal.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EmailMeComponent } from './email-me/email-me.component';
     FullpageScrollComponent,
     NeonButtonComponent,
     FloatingHomeComponent,
-    EmailMeComponent
+    EmailMeComponent,
+    AnimatedModalComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
