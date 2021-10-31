@@ -8,10 +8,11 @@ import { StairsLoaderComponent } from './stairs-loader/stairs-loader.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ButtonComponent } from './button/button.component';
 import { FullPageNavComponent } from './full-page-nav/full-page-nav.component';
-import { AboutmeCardComponent } from './aboutme-card/aboutme-card.component';
 import { FullpageScrollComponent } from './fullpage-scroll/fullpage-scroll.component';
 import { NeonButtonComponent } from './neon-button/neon-button.component';
 import {MatIconModule} from '@angular/material/icon';
+import { FloatingHomeComponent } from './floating-home/floating-home.component';
+import { EmailMeComponent } from './email-me/email-me.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import {MatIconModule} from '@angular/material/icon';
     TimelineComponent,
     ButtonComponent,
     FullPageNavComponent,
-    AboutmeCardComponent,
     FullpageScrollComponent,
-    NeonButtonComponent
+    NeonButtonComponent,
+    FloatingHomeComponent,
+    EmailMeComponent
   ],
   imports: [
     BrowserModule,
