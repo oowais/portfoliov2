@@ -37,7 +37,7 @@
 
 .container form input {
   height: 0;
-  margin: 12px 0;
+  margin: 1.5em;
   z-index: 1;
 }
 
@@ -50,8 +50,8 @@
   content: "";
   position: absolute;
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 1em;
+  height: 1em;
   border: 1px solid rgba(255, 255, 255, 0.81);
   border-radius: 11px;
   cursor: pointer;
@@ -69,9 +69,9 @@
   left: 30px;
   opacity: 0;
   color: white;
-  font-size: 9px;
+  font-size: 1em;
   display: block;
-  min-width: 80px;
+  min-width: 100px;
   -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
@@ -252,6 +252,7 @@ strong {
 
 h1 {
   text-transform: uppercase;
+  color: white;
 }
 
 ol {

@@ -3,9 +3,14 @@
   width: 290px;
   height: 290px;
   clip-path: circle();
-  transition: transform 400ms ease-in;
+  animation: imgAnim 2s infinite alternate linear;
 }
 
-.img:hover {
-  transform: scale(1.1);
+@keyframes imgAnim {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }

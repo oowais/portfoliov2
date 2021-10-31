@@ -9,6 +9,9 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { ButtonComponent } from './button/button.component';
 import { FullPageNavComponent } from './full-page-nav/full-page-nav.component';
 import { AboutmeCardComponent } from './aboutme-card/aboutme-card.component';
+import { FullpageScrollComponent } from './fullpage-scroll/fullpage-scroll.component';
+import { NeonButtonComponent } from './neon-button/neon-button.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { AboutmeCardComponent } from './aboutme-card/aboutme-card.component';
     TimelineComponent,
     ButtonComponent,
     FullPageNavComponent,
-    AboutmeCardComponent
+    AboutmeCardComponent,
+    FullpageScrollComponent,
+    NeonButtonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

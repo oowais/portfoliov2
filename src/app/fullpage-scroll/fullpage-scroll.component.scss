@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.page1 {
+  background: hsl(323 21% 16%)
+}
+
+.page2 {
+  background: rgb(211, 79, 79)
+}
+
+.page3 {
+  background: rgb(67, 91, 175)
+}
+
+.page4 {
+  background: lightsalmon
+}
+
+.page5 {
+  background: darkcyan;
+}
