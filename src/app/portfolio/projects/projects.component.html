@@ -1,0 +1,31 @@
+<div class="page__container">
+  <a href="#popup-projects" class="open-popup">Projects</a>
+</div>
+<div id="popup-projects" class="popup">
+  <div class="popup__container">
+    <a href="#" class="popup__close">
+      <span class="screen-reader">close</span>
+    </a>
+    <div class="popup__content">
+      <h1 class="popup__title r-title">Projects</h1>
+      <div class="cards-container">
+
+        <div class="card" *ngFor="let p of projects">
+          <div class="card__content">
+            <div class="card__front" class={{p.classname}}>
+              <h3 class="card__title">{{p.title}}</h3>
+              <p class="card__subtitle">{{p.date}}</p>
+            </div>
+            <div class="card__back">
+              <p class="card__body">{{p.text}}</p>
+              <p class="card__body">Team size: {{p.teamSize}}</p>
+              <p class="card__body"><i>Languages used: {{p.langUsed}}</i></p>
+              <a (click)=openLink(p.url) class="button glow-button" target="_blank" *ngIf="p.url">Open in Github</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.card {
+  width: 400px;
+}
+
+.card__content {
+  text-align: justify;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  background-color: #b7c9e5;
+
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+}
+
+.card__jaadu {
+  background-image: url(../../../assets/jaadu.jpg);
+}
+
+.card__labchain {
+  background-image: url(../../../assets/labchain.jpg);
+}
+
+.card__muses {
+  background-image: url(../../../assets/muses1.jpg);
+}
+
+.card__sock {
+  background-image: url(../../../assets/sock.jpg);
+}
+
+.card__laser {
+  background-image: url(../../../assets/laser.jpg);
+}
+
+.card__mthesis {
+  background-image: url(../../../assets/mthesis.jpg);
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  border: 3px solid currentColor;
+  transform: translateZ(3rem);
+}
+
+.card__title {
+  font-size: 3rem;
+  transform: translateZ(9rem);
+  order: 2;
+  text-transform: uppercase;
+}
+
+.card__subtitle {
+  transform: translateZ(6rem);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: .75rem;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.card__body {
+  transform: translateZ(6rem);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+  color: #b7c9e5;
+  background: #333;
+}
+
+//========================
+.button {
+  text-decoration: none;
+  color: #333;
+  background: #b7c9e5;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1em;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(183, 201, 229, .7);
+}

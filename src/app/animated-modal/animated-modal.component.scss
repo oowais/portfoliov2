@@ -1,23 +1,9 @@
-/*
-=====
-DEPENDENCES
-=====
-*/
-
-/*
-helper to reset default browser's styles from headings
-*/
-
-.r-title{
+.r-title {
   margin-top: var(--rTitleMarginTop, 0) !important;
   margin-bottom: var(--rTitleMarginBottom, 0) !important;
 }
 
-/*
-helper to hide elements that are available only for screen readers.
-*/
-
-.screen-reader{
+.screen-reader {
   width: var(--screenReaderWidth, 1px) !important;
   height: var(--screenReaderHeight, 1px) !important;
   padding: var(--screenReaderPadding, 0) !important;
@@ -28,21 +14,11 @@ helper to hide elements that are available only for screen readers.
   overflow: var(--screenReaderOverflow, hidden) !important;
 }
 
-/*
-=====
-POPUP
-=====
-*/
-
-/*
-1. Creating the top and bottom gaps for the modal so that content doesn't touches window's edges
-*/
-
-.popup:not(:target){
+.popup:not(:target) {
   display: none;
 }
 
-.popup:target{
+.popup:target {
   width: 100%;
   height: 100vh;
 
@@ -53,7 +29,7 @@ POPUP
   right: 0;
 }
 
-.popup::before{
+.popup::before {
   content: "";
   box-sizing: border-box;
   width: 100%;
@@ -64,7 +40,7 @@ POPUP
   top: 50%;
 }
 
-.popup::after{
+.popup::after {
   content: "";
   width: 0;
   height: 2px;
@@ -76,7 +52,7 @@ POPUP
   margin-top: -1px;
 }
 
-.popup__container{
+.popup__container {
   box-sizing: border-box;
   padding: 5% 15%;
 
@@ -86,12 +62,12 @@ POPUP
   overscroll-behavior: contain; /* 1 */
 }
 
-.popup__title{
+.popup__title {
   --rTitleMarginBottom: 1.5rem;
   font-size: 1.5rem;
 }
 
-.popup__close{
+.popup__close {
   width: 2rem;
   height: 2rem;
 
@@ -105,87 +81,77 @@ POPUP
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
 }
 
-/*
-animation
-*/
-
-.popup::before{
+.popup::before {
   will-change: height, top;
   animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
 }
 
-.popup::after{
+.popup::after {
   will-change: width, opacity;
   animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
 }
 
-@keyframes line-animation{
+@keyframes line-animation {
 
-  0%{
+  0% {
     width: 0;
     opacity: 1;
   }
 
-  99%{
+  99% {
     width: 100%;
     opacity: 1;
   }
 
-  100%{
+  100% {
     width: 100%;
     opacity: 0;
   }
 }
 
-@keyframes open-animation{
+@keyframes open-animation {
 
-  0%{
+  0% {
     height: 0;
     top: 50%;
   }
 
-  100%{
+  100% {
     height: 100vh;
     top: 0;
   }
 }
 
-.popup__container{
+.popup__container {
   animation: fade .5s ease-out 1.3s both;
 }
 
-@keyframes fade{
+@keyframes fade {
 
-  0%{
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
-/*
-=====
-DEMO
-=====
-*/
 
 * {
   font-family: 'Helvetica', sans-serif;
   font-size: 1rem;
 }
 
-p{
+p {
   margin: 0;
   line-height: 1.5;
 }
 
-p:nth-child(n+2){
+p:nth-child(n+2) {
   margin-top: 1rem;
 }
 
-.open-popup{
+.open-popup {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
